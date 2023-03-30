@@ -5,6 +5,8 @@ import java.awt.Point;
 public class GameController {
 
     static final String DEFAULT_CHARACTER_NAME = "Character";
+ 
+ 
 
     public class GameStatus {
         // TODO: Add other status data
@@ -50,17 +52,20 @@ public class GameController {
         // TODO: Should probably also update the game results
     }
 
+    Point coordinates;
     public void setCharacterPosition(Point coordinates) {
-        // TODO: IMPLEMENT THIS TO SET CHARACTERS CURRENT POSITION -- exists to be testable
+        this.coordinates = coordinates;
     }
 
+    int moveCount;
     public void setCurrentMoveCount(int moveCount) {
-        // TODO: IMPLEMENT THIS TO SET CURRENT MOVE COUNT -- exists to be testable
+        this.moveCount = moveCount;
     }
 
     public int getTotalPositions() {
         // TODO: IMPLEMENT THIS TO GET THE TOTAL POSITIONS FROM THE MAP -- exists to be
         // testable
+        
         return -10;
     }
 

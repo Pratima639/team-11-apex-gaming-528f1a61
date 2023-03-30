@@ -8,5 +8,8 @@ public class Point {
         this.xCoordinate=xCoordinate;
         this.yCoordinate=yCoordinate;
     }
+
+    public String toString()
+    { return "(" + this.xCoordinate +" , " + this.yCoordinate + ")";}
     
 }
